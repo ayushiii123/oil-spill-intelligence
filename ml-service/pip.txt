@@ -1,18 +1,8 @@
-from fastapi import FastAPI
-
-app = FastAPI(title="Oil Spill Intelligence ML Service")
-
-
-@app.get("/")
-def root():
-    return {
-        "status": "online",
-        "service": "oil-spill-ml-service"
-    }
-
-
-@app.get("/health")
-def health():
-    return {
-        "status": "healthy"
-    }
+fastapi
+uvicorn
+python-multipart
+pillow
+rasterio
+torch
+torchvision
+numpy

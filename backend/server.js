@@ -260,7 +260,7 @@ console.log("UPLOAD BODY:", req.body);
       );
 
       const response = await fetch(
-        "http://127.0.0.1:8000/detect",
+  `${process.env.ML_SERVICE_URL || "http://127.0.0.1:8000"}/detect`,
         {
           method: "POST",
           body: mlFormData,

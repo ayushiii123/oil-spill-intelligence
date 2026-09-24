@@ -237,7 +237,7 @@ useEffect(() => {
       formData.append("file", selectedFile);
 
       const response = await fetch(
-        "http://localhost:5000/api/satellite/detect",
+        `${import.meta.env.VITE_API_URL}/api/satellite/detect`,
         {
           method: "POST",
           body: formData,

@@ -58,7 +58,7 @@ const AISCorrelation = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:5000/api/ais/correlate",
+       `${import.meta.env.VITE_API_URL}/api/ais/correlate`,
         {
           method: "POST",
           headers: {

@@ -1,0 +1,13 @@
+backend/.env
+backend/node_modules/
+ml-service/venv/
+frontend/node_modules/
+
+ml-service/data/
+ml-service/models/*.pth
+ml-service/*.tiff
+
+ml-service/__pycache__/
+ml-service/*.pyc
+ml-service/*.tif
+ml-service/*.pdf
